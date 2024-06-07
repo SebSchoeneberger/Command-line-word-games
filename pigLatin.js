@@ -15,7 +15,7 @@ function convertToPigLatin(word) {
     }
 }
 
-// Calling the function on each word (element) of the Players Input Array
+// Calling the function on each word (element) of the Players Input Array.
 playerInput.forEach(word => {
     convertToPigLatin(word);
 });
