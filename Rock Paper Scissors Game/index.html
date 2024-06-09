@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                    lilitaOne: ["Lilita One"],
+                colors: {
+                  clifford: "#da373d",
+                  figmacoffee: "DDC7BB",
+                  figmalbrown: "FEF7F2",
+                  figmawhite: "FFFFFF",
+                },
+              },
+            },
+          },
+        };
+      </script>
+
+    <title>Rock Paper Scissors Game</title>
+</head>
+
+<body class="m-0 p-0 box-border bg-[#2AB6E5] font-lilitaOne">
+    <header>
+        <nav class="border-b-4 border-solid border-black p-2 text-white bg-black">
+            <ul class="flex justify-center items-center w-full gap-4">
+                <li><button>1 Player mode</button></li>
+                <li><button>2 Player mode</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="flex justify-center p-8">
+            <div class="text-center">
+                <h1 class="text-4xl pb-4	">Rock Paper Scissors Game</h1>
+                <h3 class="text-2xl">Player 1 Vs Computer</h3>
+            </div>
+        </section>
+
+        <section class="flex justify-around items-center">
+            <div>
+                <h4 class="text-2xl	pb-4">Player 1</h4>
+                <p class="text-lg">Please make your choice:</p>
+                <div class="flex gap-6 pt-8">
+                    <button><img src="img/hand-rock-svgrepo-com.svg" alt="" class=" w-20 border-2 p-1"></button>
+                    <button><img src="img/hand-paper-svgrepo-com.svg" alt="" class=" w-20 border-2 p-1"></button>
+                    <button><img src="img/hand-scissors-svgrepo-com.svg" alt="" class=" w-20 border-2 p-1"></button>
+                </div>
+            </div>
+
+            <div class="w-32 h-32 border-2">
+                <img src="" alt="">
+            </div>
+
+            <p class="text-4xl">VS</p>
+
+            <div class="w-32 h-32 border-2">
+                <img src="" alt="">
+            </div>
+
+            <div>
+                <h4 class="text-2xl	pb-4">Computer</h4>
+                <p class="text-lg">Wait for computers random choice</p>
+                <div class="flex gap-6 pt-8">
+                    <button><img src="img/hand-rock-svgrepo-com.svg" alt="" class="w-20 border-2 p-1"></button>
+                    <button><img src="img/hand-paper-svgrepo-com.svg" alt="" class="w-20 border-2 p-1"></button>
+                    <button><img src="img/hand-scissors-svgrepo-com.svg" alt="" class="w-20 border-2 p-1"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col justify-center gap-4 pt-8">
+            <h4 class="flex justify-center text-4xl pb-2">Score</h4>
+
+            <div class="flex justify-center gap-6">
+                <div class="flex-col flex items-center justify-center ">
+                    <h5 class="text-2xl">Player 1</h5>
+                    <p class="text-xl">0</p>
+                </div>
+                <div class="flex-col flex items-center justify-center ">
+                    <h5 class="text-2xl">Ties</h5>
+                    <p class="text-xl">0</p>
+                </div>
+                <div class="flex-col flex items-center justify-center ">
+                    <h5 class="text-2xl">Computer</h5>
+                    <p class="text-xl">0</p>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <button class="w-auto text-xl border-2 p-1">Restart</button>
+            </div>
+        </section>
+
+        <div class="flex justify-center">
+            <img src="img/Untitled design (2).png" alt="">
+        </div>
+    </main>
+
+    <footer class="fixed w-full flex bottom-0 p-2 justify-center border-t-2 border-black border-solid  text-white bg-black ">
+        <p class="pr-5">&copy;Webpage by: Sebastian Schoeneberger</p>
+        <p><a href="malito:sebschoeneberg@gmail.com"> &#128231; sebastianschoeneberger@yahoo.com</a></p>
+    </footer>
+</body>
+
+</html>
